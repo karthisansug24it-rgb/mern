@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-library: #FAF8F4;
+  --surface: #FFFFFF;
+  --surface-warm: #F4EFE6;
+  --primary: #1F4D3A;
+  --primary-hover: #183D2E;
+  --primary-light: #EAF1ED;
+  --accent: #B8893B;
+  --accent-light: #F8F3EA;
+  --text-primary: #2B2F33;
+  --text-secondary: #5A626A;
+  --border: #E5DFD5;
+  --overdue: #A83232;
+  --overdue-light: #FAEDED;
+
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-library);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings default to editorial serif font */
+h1, h2, h3, h4, .font-editorial {
+  font-family: 'Fraunces', 'Playfair Display', Georgia, serif;
+}
+
+/* Custom quiet editorial scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1C8BA;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B3A795;
+}
+
+/* Accessible focus visible utility */
+*:focus-visible {
+  outline: 2px solid #1F4D3A;
+  outline-offset: 1px;
+}
